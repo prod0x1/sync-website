@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sign Up</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#0F9696">
+<meta name="msapplication-navbutton-color" content="#0F9696">
+<meta name="apple-mobile-web-app-status-bar-style" content="#0F9696">
+<link href="../images/icon.ico" rel="icon" type="image/x-icon" />
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500,900' rel='stylesheet' type='text/css'/>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet"/>
+<link href="../css/theme.css" rel="stylesheet"/>
+<script src="../js/main.js"></script>
+<script src="../js/extra.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="https://secure.comodo.com/trustlogo/javascript/trustlogo.js"></script>
+<script src="https://js.stripe.com/v3/"></script>	</head>
+
+<body class="body--centered-content">
+    <form class="form form--col form--col-indent" action="php/signup.php" method="post" autocomplete="off">
+        <div class="form__input-wrapper fadeInUp animated" style="animation-delay: 0.4s;">
+            <input class="form__input" type="text" name="l" data-error-type="l" data-error-text="login error" oninput="validInput(this)">
+            <span class="form__input-title">Login</span>
+        </div>
+        <div class="form__input-wrapper fadeInUp animated" style="animation-delay: 0.4s;">
+            <input class="form__input form__input--password" type="password" name="p" data-error-type="p" data-error-text="pass error" oninput="validInput(this)">
+            <span class="form__input-title">Password</span>
+        </div>
+        <div class="form__input-wrapper fadeInUp animated" style="animation-delay: 0.4s;">
+            <input class="form__input form__input--repeat-password" type="password" name="p2" data-error-type="p" data-error-text="pass error" oninput="validInput(this), validRepeatPassword(this)">
+            <span class="form__input-title">Repeat Password</span>
+        </div>
+        <input class="button fadeInUp animated" style="animation-delay: 0.4s;" type="submit" name="submit" value="sign up">
+    </form>
+
+</body>
+</html>

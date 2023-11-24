@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Log In</title>
+		<meta name="description" content="Sync Solutions Owning Since 2k17">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#8648F2">
+<meta name="msapplication-navbutton-color" content="#8648F2">
+<meta name="apple-mobile-web-app-status-bar-style" content="#8648F2">
+<link href="../images/icon.ico" rel="icon" type="image/x-icon" />
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500,900' rel='stylesheet' type='text/css'/>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet"/>
+
+<link href="../css/theme.css" rel="stylesheet"/>
+
+<script src="../js/main.js"></script>
+<script src="../js/extra.js"></script>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="https://secure.comodo.com/trustlogo/javascript/trustlogo.js"></script>
+<script src="https://js.stripe.com/v3/"></script>	</head>
+	<body class="body body--fullbg body--centered-content">
+		<form name="login" id="login" class="form form--col form--col-indent" action="php/login.php" method="post" autocomplete="off">
+			<div class="form__input-wrapper fadeInUp animated" style="animation-delay: 0.4s;">
+				<input class="form__input" type="text" name="l" data-error-type="l" oninput="validInput(this)">
+				<span class="form__input-title">Login</span>
+			</div>
+			<div class="form__input-wrapper fadeInUp animated" style="animation-delay: 0.5s;">
+				<input class="form__input" type="password" name="p" data-error-type="p" oninput="validInput(this)">
+				<span class="form__input-title">Password</span>
+			</div>
+			<input class="button fadeInUp animated" style="animation-delay: 0.6s;" type="submit" name="submit" value="Log In" >
+		</form>
+	</body>
+</html>
